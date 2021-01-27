@@ -12,11 +12,13 @@ import Footer from './components/footer.component.js';
 function App() {
   return (
     <Router>
+
       <header>
         <NavbarSocialLg />
         <Navbar />
         <NavbarSocialSm />
       </header>
+
       <main>
         <Hero />
         <div className="content-block">
@@ -34,7 +36,9 @@ function App() {
         </div>
 
       </main>
+
       <Footer />
+
     </Router>
   );
 }
