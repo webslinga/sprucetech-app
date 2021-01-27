@@ -11,10 +11,10 @@ export default class Footer extends Component {
 
             <div className="row">
               <div className="col-12 col-lg-6">
-                <form className="newsletter-form" action="" method="post">
+                <form className="newsletter-form spruceform" action="" method="post">
                   <h4 className="text-dark-bg">Subscribe to our newsletter</h4>
                   <input type="text" placeholder="Enter email address"></input>
-                  <button type="button" name="button">Submit</button>
+                  <button className="spruce-btn" type="button" name="button">Submit</button>
                 </form>
               </div>
               <div className="col-12 col-lg-6 text-lg-end mt-5">
@@ -48,7 +48,7 @@ export default class Footer extends Component {
                   1149 Bloomfield Ave., Suite G, Clifton, NJ 07012<br />
                   <a href="tel:+18622259300">(862)225-9300</a>
                 </address>
-                <button type="button" name="button">Email Us</button>
+                <button className="spruce-btn" type="button" name="button">Email Us</button>
               </div>
               <div className="col-4 text-end">
                 <ul className="list-footer-links">

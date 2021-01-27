@@ -8202,40 +8202,7 @@ h4 {
   width: 6rem;
 }
 
-input[type="text"] {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 2rem 2rem 2rem 2rem;
-  width: 40rem;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-input[type="text"]::-moz-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-input[type="text"]:-ms-input-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-input[type="text"]::-ms-input-placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-input[type="text"]::placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-button {
+.spruce-btn {
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -8243,21 +8210,54 @@ button {
   text-transform: uppercase;
 }
 
-button.light-bg-button {
+.spruce-btn.light-bg-button {
   border: 0.1rem solid #00597c;
   color: #00597c;
 }
 
-.event-filter {
+.spruceform input[type="text"] {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 2rem 2rem 2rem 2rem;
+  width: 40rem;
+}
+
+.spruceform input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.spruceform input[type="text"]::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.spruceform input[type="text"]:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.spruceform input[type="text"]::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.spruceform input[type="text"]::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.spruceform.event-filter {
   position: relative;
 }
 
-.multiselect {
+.spruceform .multiselect {
   display: inline-block;
   width: 33.3rem;
 }
 
-.multiselect .selectBox select {
+.spruceform .multiselect .selectBox select {
   border: 0.3rem solid #00597c;
   font-weight: bold;
   padding: 2rem 2rem;
@@ -8265,12 +8265,12 @@ button.light-bg-button {
   width: 100%;
 }
 
-.multiselect label {
+.spruceform .multiselect label {
   padding: 2rem 2rem 2rem 2rem;
   text-align: left;
 }
 
-.multiselect label .filter-annual::before {
+.spruceform .multiselect label .filter-annual::before {
   background: url("/images/icons/050-annual-event-icon-green@2x.png") no-repeat 0 0/20px 20px;
   content: '';
   display: inline-block;
@@ -8280,7 +8280,7 @@ button.light-bg-button {
   width: 20px;
 }
 
-.multiselect label .paid-annual::before {
+.spruceform .multiselect label .paid-annual::before {
   background: url("/images/icons/052-paid-event-icon-green@2x.png") no-repeat 0 0/20px 20px;
   content: '';
   display: inline-block;
@@ -8290,7 +8290,7 @@ button.light-bg-button {
   width: 20px;
 }
 
-.multiselect label .free-annual::before {
+.spruceform .multiselect label .free-annual::before {
   background: url("/images/icons/054-free-event-green@2x.png") no-repeat 0 0/20px 20px;
   content: '';
   display: inline-block;
@@ -8300,7 +8300,7 @@ button.light-bg-button {
   width: 20px;
 }
 
-.multiselect label .rsvp-annual::before {
+.spruceform .multiselect label .rsvp-annual::before {
   background: url("/images/icons/056-rsvp-needed-green@2x.png") no-repeat 0 0/20px 20px;
   content: '';
   display: inline-block;
@@ -8310,7 +8310,7 @@ button.light-bg-button {
   width: 20px;
 }
 
-.multiselect .overSelect {
+.spruceform .multiselect .overSelect {
   position: absolute;
   left: 0;
   right: 0;
@@ -8318,27 +8318,27 @@ button.light-bg-button {
   bottom: 0;
 }
 
-.multiselect #checkboxes {
+.spruceform .multiselect #checkboxes {
   display: none;
   border: 1px #dadada solid;
 }
 
-.multiselect #checkboxes label {
+.spruceform .multiselect #checkboxes label {
   display: block;
   position: relative;
 }
 
-.multiselect #checkboxes label input[type="checkbox"] {
+.spruceform .multiselect #checkboxes label input[type="checkbox"] {
   position: absolute;
   right: 2rem;
   top: 2.7rem;
 }
 
-.multiselect #checkboxes label:hover {
+.spruceform .multiselect #checkboxes label:hover {
   background-color: #799a3d;
 }
 
-.filter-button {
+.spruceform .filter-button {
   background: url("/images/icons/041-calendar-icon-green@2x.png") no-repeat 0 0/7.3rem 7.3rem;
   height: 7.3rem;
   width: 7.3rem;
