@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import axios from 'axios';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export default class AddEvent extends Component {
+export default class EditEvent extends Component {
 
   constructor(props){
     super(props);
@@ -26,6 +26,25 @@ export default class AddEvent extends Component {
       type: '',
       description: ''
     };
+  }
+
+  componentDidMount() {
+    console.log(this.props.match.params.id);
+    axios.get('http://localhost:3005/event/' + this.props.match.params.id)
+      .then(response => {
+        this.setState({
+          title: response.data.title,
+          date: new Date(response.data.date),
+          time: response.data.time,
+          location: response.data.location,
+          featured: response.data.featured,
+          type: response.data.type,
+          description: response.data.description
+        })
+      })
+      .catch(error => {
+        console.log(error);
+      })
   }
 
   onChangeTitle(e) {
@@ -86,7 +105,7 @@ export default class AddEvent extends Component {
 
     console.log(event);
 
-    axios.post('http://localhost:3005/event/add/', event)
+    axios.put('http://localhost:3005/event/update/' + this.props.match.params.id, event)
       .then(response => console.log(response.data));
 
     window.location = '/edit-delete-events';
@@ -95,7 +114,7 @@ export default class AddEvent extends Component {
   render() {
     return (
       <div className="container-lg">
-        <h1 className="my-5">Add Event</h1>
+        <h1 className="my-5">Edit Event</h1>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label className="d-block">Title</label>
